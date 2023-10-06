@@ -71,7 +71,7 @@ module.exports = sansekai = async (client, m, chatUpdate, store) => {
     if (isCmd2) {
       switch (command) {
         case "help": case "menu": case "start": case "info":
-          m.reply(`*Whatsapp Bot OpenAI*
+          m.reply(`*Whatsapp OpenAI*
             
 *(ChatGPT)*
 Cmd: ${prefix}ai 
@@ -81,9 +81,9 @@ Tanyakan apa saja kepada AI.
 Cmd: ${prefix}img
 Membuat gambar dari teks
 
-*(Source Code Bot)*
+*(Source Code)*
 Cmd: ${prefix}sc
-Menampilkan source code bot yang dipakai`)
+Menampilkan source code yang dipakai`)
           break;
         case "ai": case "openai": case "chatgpt": case "ask":
           try {
@@ -138,7 +138,7 @@ Menampilkan source code bot yang dipakai`)
         }
           break;
           case "sc": case "script": case "scbot":
-           m.reply("Bot ini menggunakan script dari https://github.com/Sansekai/Wa-OpenAI");
+           m.reply("Bot ini menggunakan script dari https://github.com/qwerkcar/OpenAI");
           break
         default: {
           if (isCmd2 && budy.toLowerCase() != undefined) {
